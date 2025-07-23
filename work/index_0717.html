@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>0717 과제</title>
+
+    <link rel="stylesheet" href="./source_0717/css/homework.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="myHeader">
+            <header>
+                <p>저를 소개합니다</p>
+            </header>
+        </div>
+
+
+        <nav>
+            <ul class="mainMenu">
+                <li><button onclick="displayResult()">이름</button></li>
+                <li><button onclick="displayResult2()">나이</button></li>
+                <li><button onclick="displayResult3()">지역</button></li>
+                <li><button onclick="displayResult4()">취미</button></li>
+            </ul>
+        </nav>
+
+
+        <div class="mySection">
+            <h1 id="myInfo">메뉴를 눌러주세요.</h1>
+        </div>
+    </div>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myInfo").innerHTML = "제 이름은 정희찬 입니다.";
+        }
+
+        function displayResult2() {
+            document.getElementById("myInfo").innerHTML = "저는 99년생 현재 27살 입니다.";
+        }
+
+        function displayResult3() {
+            document.getElementById("myInfo").innerHTML = "저는 경기도 화성 향남에서 왔습니다.";
+        }
+
+        function displayResult4() {
+            document.getElementById("myInfo").innerHTML = "저는 주짓수를 취미로 배우고 있습니다.";
+        }
+    </script>
+
 </body>
+
 </html>

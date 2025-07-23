@@ -1,0 +1,32 @@
+.contrainer {
+    padding: auto;
+    margin: 0;
+    overflow: auto;
+}
+
+.myHeader {
+    background-color: aqua;
+    margin: 0;
+}
+
+.myNav {
+    background-color: burlywood;
+    margin: 0;
+}
+
+.myAside {
+    background-color: aquamarine;
+    margin: 0;
+}
+
+.mySection {
+    background-color: cadetblue;
+}
+
+.myArticle {
+    background-color: coral;
+}
+
+.myFooter {
+    background-color: darkgoldenrod;
+}
