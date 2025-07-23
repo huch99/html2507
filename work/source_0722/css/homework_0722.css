@@ -1,0 +1,253 @@
+* { /*요소 전체 적용*/
+    padding: 0;
+    margin: 0 auto;
+}
+/* ---------------------------------------------------폰트 */
+.bagel-fat-one-regular { /*구글폰트 적용*/
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------------------------------------------------전체 틀 */
+#container { /*전체 틀*/
+    width: 100%;
+}
+/* ---------------------------------------------------헤더 */
+#header { /*헤더라인*/
+    padding-bottom: 20px;
+}
+
+#header > h1 { /*헤더 제목*/
+    font-size: 80px; /*글자 크기*/
+    line-height: 100px; /*줄 높이 지정 - 글자 세로 정렬*/
+}
+/* ---------------------------------------------------섹션1 */
+#section { /*섹션1*/
+    padding-bottom: 20px; /*패딩 하단 지정*/
+}
+
+#section > h2 { /*섹션 제목*/
+    font-size: 35px; /*글자 크기*/
+    padding: 10px; /*패딩 지정*/
+}
+
+#iconBox > ul {
+    display: flex; /*플렉스 박스*/
+    justify-content: space-evenly; /*콘텐트 고르게 정렬*/    
+    width: 80%; /*브라우저 크기 반응 너비*/
+    height: 100px; /*높이 지정*/
+}
+
+#iconBox > ul > li {
+    list-style-type: none; /*리스트 타입 없애기*/
+    width: 20%; /*브라우저 크기 반응 너비*/
+    font-size: 40px; /*글자 크기*/
+    line-height: 100px; /*줄 높이 지정 - 텍스트 위치 조정 목적*/
+    border: 2px solid black; /*아이콘 별 박스 구분 테두리*/
+    border-radius: 20px; /*테두리 둥글게*/
+}
+/* ---------------------------------------------------섹션2 */
+#section2 { /*섹션2*/
+    padding-bottom: 20px; /*패딩 하단 지정*/
+}
+
+#section2 > h2 {
+    font-size: 35px; /*글자 크기*/
+    padding: 10px; /*패딩 지정*/
+}
+
+#textColor > ul {
+    display: flex; /*플렉스 박스*/
+    justify-content: space-evenly; /*콘텐트 고르게 정렬*/    
+    width: 80%; /*브라우저 크기 반응 너비*/
+    height: 100px; /*높이 지정*/
+}
+
+#textColor > ul > li {
+    list-style-type: none; /*리스트 타입 없애기*/
+    width: 10%; /*브라우저 크기 반응 너비*/
+    font-size: 20px; /*글자 크기*/
+    line-height: 100px; /*줄 높이 지정 - 텍스트 위치 조정 목적*/
+    border: 2px solid black; /*아이콘 별 박스 구분 테두리*/
+    border-radius: 20px; /*테두리 둥글게*/
+}
+
+#textColor > ul > li.colorHsla, #textColor > ul > li.colorRgba {
+    line-height: 50px; /*줄 높이 따로 지정*/
+}
+/* ---------------------------------------------------섹션3 */
+#section3 { /*섹션3*/
+    padding-bottom: 20px; /*패딩 하단 지정*/
+    height: fit-content;
+}
+
+#section3 > h2 {
+    font-size: 35px; /*글자 크기*/
+    padding: 10px; /*패딩 지정*/
+}
+
+#textCon {
+    display: flex;
+}
+
+#textShadow, #textDeco {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#textShadow > ul {
+    display: flex; /*플렉스 박스*/
+    flex-direction: column; /*세로로 정렬*/
+    justify-content: space-between; /*콘텐트 고르게 정렬*/    
+    width: 80%; /*브라우저 크기 반응 너비*/
+    height: 100%; /*높이 지정*/
+
+}
+
+
+
+#textShadow > ul > li {
+    list-style-type: none; /*리스트 타입 없애기*/
+    width: 100%; /*브라우저 크기 반응 너비*/
+    height: 33%;
+    font-size: 20px; /*글자 크기*/
+    line-height: 100px; /*줄 높이 지정 - 텍스트 위치 조정 목적*/
+    border: 2px solid black; /*아이콘 별 박스 구분 테두리*/
+    border-radius: 20px; /*테두리 둥글게*/
+
+}
+
+#textDeco > ul {
+    display: flex; /*플렉스 박스*/
+    flex-direction: column; /*세로로 정렬*/
+    justify-content: space-evenly; /*콘텐트 고르게 정렬*/    
+    width: 80%; /*브라우저 크기 반응 너비*/
+    height: fit-content; /*높이 지정*/
+}
+
+
+
+#textDeco > ul > li {
+    list-style-type: none; /*리스트 타입 없애기*/
+    width: 100%; /*브라우저 크기 반응 너비*/
+    font-size: 20px; /*글자 크기*/
+    line-height: 100px; /*줄 높이 지정 - 텍스트 위치 조정 목적*/
+    border: 2px solid black; /*아이콘 별 박스 구분 테두리*/
+    border-radius: 20px; /*테두리 둥글게*/
+    margin-top: auto;
+}
+/* --------------------------------------------------- 섹션4*/
+#section4 { /*섹션4*/
+    padding-bottom: 20px; /*패딩 하단 지정*/
+    height: fit-content;
+}
+
+#section4 > h2 {
+    font-size: 35px; /*글자 크기*/
+    padding: 10px; /*패딩 지정*/
+}
+
+table {
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 20px;
+}
+
+caption {
+    border: 1px solid #000000;
+}
+
+tr, td ,th {
+    border: 1px dotted #000000;
+    padding: 10px 20px;
+}
+
+
+
+/* --------------------------------------------------- 클래스*/
+.textAlign_center { /*텍스트 중앙 정렬*/
+    text-align: center;
+}
+
+.iconHover:hover { /*마우스 올렸을 때 - 아이콘 박스*/
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.borderBottom { /*구분 선*/
+    border-bottom: 3px solid #000000;
+}
+
+.textBold { /*글자 굵게*/
+    font-weight: bold;
+}
+
+.lineHeight_2 {
+    line-height: 50px;
+}
+
+.colorRed {
+    color: red;
+}
+
+.color16 {
+    color: #55ff00;
+}
+
+.colorHsl {
+    color: hsl(240, 100%, 50%);
+}
+
+.colorRgb {
+    color: rgb(255,0,255);
+}
+
+.colorHsla {
+    background-color: hsla(330, 50%, 50%, 0.5);
+}
+
+.colorRgba {
+    background-color: rgba(255,255,0,0.2);
+}
+
+.shadowPlus {
+    text-shadow: 5px 5px #ff0000;
+}
+
+.shadowMinus {
+    text-shadow: -5px -5px #0000ff;
+}
+
+.shadow {
+    text-shadow: 5px 5px 5px #00ff00;
+}
+
+.decoNone {
+    text-decoration: none;
+}
+
+.decoUnder {
+    text-decoration: underline;
+}
+
+.decoOver {
+    text-decoration: overline;
+}
+
+.decoLine {
+    text-decoration: line-through;
+}
+
+.textSpace {
+    letter-spacing: 0.2em;
+}
+
+.col_01 {
+    background-color: #e5f6f6;
+}
+
+.capSide {
+    caption-side: bottom;
+}

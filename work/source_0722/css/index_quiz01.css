@@ -1,0 +1,15 @@
+#container {            /*내용 전체를 감싸는 영역*/
+    width: 600px;       /*너비*/
+    margin: 20px auto;  /*내용이 화면 중앙에 오도록 지정*/ 
+}
+
+h1 {
+    display: inline-block;            /*글자 부분에만 배경색이 채워지도록 지정*/
+    background-color: #0404aa;      /*배경색*/
+    color: #fff;                    /*글자색*/
+}
+
+.accent {
+    font-weight: bold;    /*글자 굵게*/
+    color: red;         /*글자색*/
+}
