@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>과제</title>
+    <title>정희찬 과제방</title>
 
-    <style>
-        *{
-            text-align: center;
-            margin: 0 auto;
-        }
+    <link rel="stylesheet" href="./homework07/css/index.css">
 
-        h1 {
-            padding: 10px;
-            border-bottom: 3px solid #000;
-        }
-
-        table {
-            padding: 20px;
-        }
-
-        tr, td , th {
-            border: 1px solid #000;
-            padding: 10px 20px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>정희찬 과제방</h1>
-    <table>
-    <tr>
-        <th>1주차</th>
-        <td><a href="./work/index_0716.html">day01_0716</a></td>
-        <td><a href="./work/index_0717.html">day02_0717</a></td>
-        <td><a href="./work/index_0718.html">day03_0718</a></td>
-    </tr>
 
-    <tr>
-        <th>2주차</th>
-        <td><a href="./work/index_0721.html">day04_0721</a></td>
-        <td><a href="./work/index_0722.html">day05_0722</a></td>
-        <td><a href="./work/index_0723.html">day06_0723</a></td>
-        <td><a href="./work/index_0724.html">day06_0724</a></td>
-        <td><a href="./work/index_0725.html">day06_0725</a></td>
-    </tr>
-    </table>
+<body>
+
+    <div id="container">
+        <img src="./homework07/images/bg5.jpg" alt="night" id="backImg">
+
+        <div id="header">
+            <h1 class="nanum-brush-script-regular">정희찬 과제방</h1>
+        </div>
+
+        <div id="section">
+            <ul>
+                <li id="july" onclick="homeworkResult(event)">7월</li>
+                <li id="august" onclick="homeworkResult(event)">8월</li>
+                <li id="september" onclick="homeworkResult(event)">9월</li>
+                <li id="october" onclick="homeworkResult(event)">10월</li>
+                <li id="november" onclick="homeworkResult(event)">11월</li>
+            </ul>
+        </div>
+        
+        <div id="content"></div>
+    </div>
+
+    <script>
+        const x = [
+            {id:'july', link:'homework_07.html'},
+            {id:'august',link:'#'},
+            {id:'september', link:'#'},
+            {id:'october', link:"#"},
+            {id:'november', link:'#'},
+        ];
+        
+        function homeworkResult(event) {
+            const clickedId = event.target.id;
+
+            const matchedObject = x.find(item => item.id === clickedId)
+
+            if (matchedObject) {
+                const link = matchedObject.link;
+                document.getElementById("content").innerHTML = "<div id='contents'><iframe src='./homework07/homeworks/" + link + "' frameborder='0'></iframe>" + "</div>" + "<button onclick='resetContent()'>되돌리기</button>"
+                
+            }
+            else {
+                console.log('일치하는 링크를 찾을 수 없습니다.');
+            }
+            
+        }
+
+        function resetContent() {
+             document.getElementById('content').innerHTML = '';
+        }
+
+        
+    </script>
 </body>
+
 </html>
