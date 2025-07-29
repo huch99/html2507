@@ -1,0 +1,30 @@
+/* 배경 이미지 배치하고 고정하기 */
+body {
+    background-image: url("../images/bg2.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+.bg {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-image: url("../images/bg3.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    border: 10px solid #ccc;
+    margin: 10px;
+}
+
+#bg1 {
+    background-origin: padding-box;
+}
+
+#bg2 {
+    background-origin: border-box;
+}
+
+#bg3 {
+    background-origin: content-box;
+}

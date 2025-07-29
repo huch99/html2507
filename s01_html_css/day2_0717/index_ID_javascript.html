@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID로 요소 접근하기</title>
+</head>
+
+<body>
+
+    <h2>자바스크립트를 통해 아이디에 접근하기</h2>
+    <p>자바스크립트는 getElementById() method:를 통해 특정 아이디를 접근할 수 있다.</p>
+
+    <h1 onclick="displayResult()" id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+        function displayResult() {
+            if(value.getElementById("myHeader") =="Hello World!"){
+                document.getElementById("myHeader").innerHTML = "Have a nice day!";
+            }
+            else {
+                ocument.getElementById("myHeader").innerHTML = "Hello World!";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

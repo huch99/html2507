@@ -1,0 +1,6 @@
+@import url('./index03_for.css') only screen and (min-width:768px) and (max-width:1023px);
+
+body {
+    text-align: center;
+    font-size: 3em;
+}

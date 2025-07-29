@@ -1,0 +1,107 @@
+/* 박스 모델 테두리 지정하기 */
+.box1 {
+    border-style: solid;
+}
+
+.box2 {
+    border-style: dotted;
+}
+
+.box3 {
+    border-style: dashed;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 100px;
+    height: 100px;
+    border-width: 1px;
+    border-color: #000;
+    margin: 10px;
+    display: inline-flex;
+}
+
+/* 박스 모델 테두리 두께 지정하기 */
+.box_01,
+.box_02,
+.box_03,
+.box_04 {
+    width: 100px;
+    height: 100px;
+    border-color: #000;
+    margin: 10px;
+    display: inline-flex;
+    border-style: solid;
+}
+
+.box_01 {
+    border-width: 2px;
+}
+
+.box_02 {
+    border-width: thick thin;
+    /*상하 좌우;*/
+}
+
+.box_03 {
+    border-width: thick thin thin;
+    /*상 좌우 하;*/
+}
+
+.box_04 {
+    border-width: 10px 5px 5px 10px;
+    /*상 우 하 좌; 시계방향*/
+}
+
+/* 박스 모델의 테두리 색상 지정하기 */
+.boxC01,
+.boxC02 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-flex;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.boxC01 {
+    border-color: #f00;
+}
+
+.boxC02 {
+    border-color: #00f #000 #000 #f00;
+}
+
+/* 테두리 스타일을 묶어서 지정하기 */
+#boxCon {
+    width: 800px;
+}
+
+#boxCon> h1 {
+    border-bottom: 3px solid rgb(75,70,70);
+    padding-bottom: 5px;
+}
+
+#boxCon > p {
+    padding: 10px;
+    border: 3px dotted #00f;
+}
+
+/* 이미지의 꼭짓점을 둥글게 표시하기 */
+.round {
+    border-radius: 25px;
+}
+/* 이미지를 원형으로 표시하기 */
+.circle {
+    border-radius: 50%;
+}
+
+/* 원하는 꼭짓점만 둥글게 처리하기 */
+.custBox {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #00f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

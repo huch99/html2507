@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정희찬 과제방</title>
+
+    <link rel="stylesheet" href="./css/practice.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+        <img src="./images/bg5.jpg" alt="night" id="backImg">
+
+        <div id="header">
+            <h1 class="nanum-brush-script-regular">정희찬 과제방</h1>
+        </div>
+
+        <div id="section">
+            <ul>
+                <li id="july" onclick="homeworkResult(event)">7월</li>
+                <li id="august" onclick="homeworkResult(event)">8월</li>
+                <li id="september" onclick="homeworkResult(event)">9월</li>
+                <li id="october" onclick="homeworkResult(event)">10월</li>
+                <li id="november" onclick="homeworkResult(event)">11월</li>
+            </ul>
+        </div>
+        
+        <div id="content"></div>
+    </div>
+
+    <script>
+        const x = [
+            {id:'july', link:'homework_07.html'},
+            {id:'august',link:'#'},
+            {id:'september', link:'#'},
+            {id:'october', link:"#"},
+            {id:'november', link:'#'},
+        ];
+        
+        function homeworkResult(event) {
+            const clickedId = event.target.id;
+
+            const matchedObject = x.find(item => item.id === clickedId)
+
+            if (matchedObject) {
+                const link = matchedObject.link;
+                document.getElementById("content").innerHTML = "<div id='contents'><iframe src='./" + link + "' frameborder='0'></iframe>" + "</div>"
+            }
+            else {
+                console.log('일치하는 링크를 찾을 수 없습니다.');
+            }
+            
+        }
+
+        
+    </script>
+</body>
+
+</html>

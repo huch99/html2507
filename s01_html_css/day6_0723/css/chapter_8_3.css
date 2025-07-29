@@ -1,0 +1,91 @@
+/* margin 속성으로 여백 설정하기 */
+#marginTest div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: inline-flex;
+}
+
+.margin1 {
+    margin: 50px;
+}
+
+.margin2 {
+    margin: 30px 50px;
+}
+
+.margin3 {
+    margin: 30px 20px 50px;
+}
+
+.margin4 {
+    margin: 30px 50px 30px 50px;
+}
+
+/* 웹 요소를 수평으로 중앙에 배치하기 */
+#center {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 마진 중첩 이해하기 */
+.marginT {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+#marginTT {
+    margin: 10px;
+    padding: 0;
+}
+
+.box1, .box1_3, .box1_2 {
+    display: inline-flex;
+    margin: 0 10px 0 10px;
+}
+
+/* 다양하게 패딩 지정하기 */
+#paddingTT {
+    padding: 40px;
+}
+
+.paddingT {
+    border: 1px solid #000;
+    display: inline;
+    margin: 5px;
+}
+
+.padding1 {
+    padding: 0;
+}
+
+.padding2 {
+    padding: 20px 30px 40px 50px;
+}
+
+.padding3 {
+    padding: 20px 30px;
+}
+
+.padding4 {
+    padding: 20px;
+}
+
+/* 보기 편한 버튼 만들기 */
+#buttonBox {
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+

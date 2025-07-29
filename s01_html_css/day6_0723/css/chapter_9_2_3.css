@@ -1,0 +1,33 @@
+.box {
+    background: url('../images/bg4.jpg') no-repeat left top;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #000;
+
+    display: inline-block;    
+}
+
+#bg1 {
+    background-size: auto;
+}
+
+#bg2 {
+    background-size: 200px;
+}
+
+#bg3 {
+    background-size: 50%;
+}
+
+#bg4 {
+    background-size: 100% 100%;
+}
+
+#bg5 {
+    background-size: contain;
+}
+
+#bg6 {
+    background-size: cover;
+}

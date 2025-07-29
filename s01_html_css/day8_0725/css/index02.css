@@ -1,0 +1,29 @@
+body {
+    background: url('../images/bg-light.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+}
+
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+    body {
+        background: url('../images/bg-dark.jpg');
+        background-size: cover;
+        color: #fff;
+    }
+    
+}
+
+@media screen and (max-width : 767px) {
+    body {
+        background: url('../images/bg-small.jpg');
+        background-size: cover;
+        color: #fff;
+    }
+    
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: 10px auto;
+    text-align: center;
+    width: 1500px;
+
+}
+
+h1 {
+    color: #aaa;
+    padding: 10px 20px;
+}
+
+#container > p {
+    color: #ccc;
+    padding: 20px;
+}
+
+#travel_cardCon {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.travel_card {
+    width: 250px;
+    height: 340px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.margin_r0 {
+    margin-right: 0;
+}
+
+.travel_card > img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+
+h3 {
+    padding: 20px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-4</title>
+
+    <link rel="stylesheet" href="./css/index02.css">
+</head>
+
+<body>
+    <!-- <h1>조건문 알아보기</h1> -->
+    <form id="form">
+        <input type="number" name="memNum" id="memNum" placeholder="입장객 수">
+        <input type="number" name="colNum" id="colNum" placeholder="한줄에 앉을 사람 수">
+
+        <input type="submit" name="submitB" id="submitB">
+    </form>
+
+    <div id="place"></div>
+
+    <hr>
+
+    <!-- 중첩 for문으로 구구단 만들기 -->
+
+    <div id="container"></div>
+
+    <script>
+        // if , if else 문 알아보기
+        //     let userNumber = prompt('숫자를 입력하세요.');
+
+        //     if (userNumber !== null) {
+
+        //         if (userNumber % 3 === 0) {
+        //             console.log('3의 배수 입니다');
+        //         }
+
+        //         else {
+        //             console.log('3의 배수가 아닙니다');
+        //         }
+        //     }
+
+        //     else {
+        //         alert('입력이 취소 됐습니다.');
+        //     }
+        // 
+
+        // 조건 연산자
+        // let userNumber = parseInt(prompt('숫자입력'));
+
+        // if (userNumber !== null ) {
+        //     (parseInt(userNumber) % 3 === 0) ? alert('3의 배수입니다.') : alert('3의 배수가 아닙니다.');
+
+        // }
+
+        // else {
+        //     alert('입력이 취소 됐습니다.')
+        // }
+
+        // or 연산자
+        // let numberOne = parseInt(prompt("50 미만인 숫자를 입력하세요."));
+        // let numberTwo = parseInt(prompt("50 미만인 숫자를 입력하세요."));
+
+        // if(num11berOne < 10 || numberTwo <10) {
+        //     alert("숫자 둘 중에서 최소한 하나는 10 미만이군요.");
+        // }
+        // else {
+        //     alert("숫자 둘 다 10 미만인 수는 없습니다.");
+        // }
+
+        // and 연산자
+        // if(numberOne < 10 && numberTwo <10) {
+        //     alert("숫자 둘 다 10 미만이군요.");
+        // }
+        // else {
+        //     alert("조건에 맞지 않는 숫자가 있습니다.");
+        // }
+
+        // switch문
+        // let session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+
+        // switch(session) {
+        //     case "1" : document.write("<p>마케팅 세션은 <strong>201호</strong> 에서 ...</p>")
+        //     break;
+        //     case "2" : document.write("<p>개발 세션은 <strong>202호</strong> 에서 ...</p>")
+        //     break;
+        //     case "3" : document.write("<p>디자인 세션은 <strong>203호</strong> 에서 ...</p>")
+        //     break;
+        //     default : alert("잘못 입력 했습니다.");
+        // }
+
+        document.getElementById('form').addEventListener('submit', function (event) {
+            event.preventDefault(); // 폼 제출 기본 동작 방지
+
+
+            let memNum = Number(document.getElementById('memNum').value);
+            let colNum = Number(document.getElementById('colNum').value);
+            let rowNum;
+            if (memNum % colNum === 0) {
+                rowNum = memNum / colNum;
+            }
+            else {
+                rowNum = parseInt(memNum / colNum) + 1;
+            }
+
+            document.getElementById('place').innerHTML = `${rowNum}개의 줄이 필요합니다.`;
+            document.getElementById('place').innerHTML
+                += "<table id = 'table'>"
+                + "</table>";
+
+          
+                for (let i = 0; i < rowNum; i++) {
+                    const tr = document.createElement('tr'); // 새로운 행 생성
+                    for (let j = 0; j < colNum; j++) {
+                        const td = document.createElement('td'); // 새 칸 생성
+                        td.innerHTML = `(${i + 1}행, ${j + 1}열)`; // 예시 내용
+                        tr.appendChild(td); // 행에 칸 추가
+                    }
+                    table.appendChild(tr); // 테이블에 행 추가
+                }
+           
+
+        });
+
+
+        for (let i = 1; i<50; i++ ) {
+            if (i === 1) {
+                continue;
+            }
+
+            document.getElementById('container').innerHTML
+            += `<h3>${i}단</h3>`;
+            for (let j = 1; j<10; j++){
+                document.getElementById('container').innerHTML
+                += `${i}x${j}=${i*j}<br>`;
+            }
+
+            if (i === 11) {
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 연습</title>
+
+    <link rel="stylesheet" href="./css/practice_css.css">
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 텍스트 색상 -->
+    <div class="textColor">
+        <h1>텍스트 색상 변경</h1>
+        <h2>텍스트 색상 변경</h2>
+    </div>
+
+    <!-- 테두리 색상 -->
+    <div class="borderColor">
+        <h3>테두리 색상</h3>
+    </div>
+
+    <!-- 투명도 -->
+    <div class="colorHsla">
+        <h3>투명도 50% rgba (red,greed,blue, 투명도)</h3>
+        <h4>투명도 10% hsla (색상 0~360, 채도, 밝기, 투명도)</h4>
+        <h5>투명도 50% opacity - 배경, 텍스트 모두 적용</h5>
+    </div>
+
+    <!-- 배경 이미지 -->
+    <div class="backImg">
+        <h1>배경 이미지</h1>
+    </div>
+
+    <!-- 테이블 -->
+    <table>
+        <caption>캡션</caption>
+        <colgroup>
+            <col style="background-color: #aaa;">
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <thead class="thead1">
+            <tr>
+                <th>#</th>
+                <th id="th1">1</th>
+                <th id="th2">2</th>
+                <th id="th3">3</th>
+            </tr>
+        </thead>
+        <tbody class="tbody1">
+            <tr>
+                <td id="td1">2</td>
+                <td id="tdr1"></td>
+                <td id="tdr2"></td>
+                <td id="tdr3"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var th1 = getElementById("th1").value;
+        var td1 = getElementById("td1").value;
+        document.getElementById("tdr1").write = getElementById("th1")*getElementById("td1");
+
+    </script>
+</body>
+
+</html>

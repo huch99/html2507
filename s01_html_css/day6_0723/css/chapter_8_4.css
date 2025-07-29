@@ -1,0 +1,88 @@
+/* 목록을 사용해 세로 내비게이션 만들기 */
+#nav1 > ul {
+    list-style-type: none;
+}
+
+#nav1 > ul > li {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #222;
+}
+
+#nav1 > ul > li > a {
+    text-decoration: none;
+}
+
+/* 목록을 사용해 가로 내비게이션 만들기 */
+#nav2 > ul {
+    list-style-type: none;
+}
+
+#nav2 > ul > li {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #222;
+    display: inline-block;
+}
+
+#nav2 > ul > li > a {
+    text-decoration: none;
+}
+
+/* 웹 브라우저에서 정상적인 흐름을 보여주는 텍스트와 이미지 */
+#float1 > img {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+#float1 {
+margin-bottom: 170px;
+
+}
+
+/* 박스 영역을 좌우로 배치하기 */
+#float2 { 
+    width: 800px;
+    margin: 0 auto 100px auto;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#box1 {
+    background-color: #ffff00;
+    float: left;
+}
+
+#box2 {
+    background-color: #00f;
+    float: right;
+}
+
+/* 플로팅 해제하기 */
+#box01 {
+     background-color: #ffff00;
+    float: left;
+}
+
+#box02 {
+    background-color: #00f;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}

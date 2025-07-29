@@ -1,0 +1,36 @@
+.border {
+    border: 5px dotted black;
+}
+
+.width100 {
+    width: 100px;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.backColor {
+    background-color: aquamarine;
+}
+
+.marginPadding10 {
+    margin: 10px;
+    padding: 10px;
+}
+
+#backBorder {
+    background-clip: border-box;
+}
+
+#backPadding {
+    background-clip: padding-box;
+}
+
+#backContent {
+    background-clip: content-box;
+}

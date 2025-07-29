@@ -1,0 +1,46 @@
+body {
+    background-color: powderblue;
+}
+
+h1 {
+    color: blue;
+    margin-left: 20px;
+    width: max-content;
+    }
+
+p {
+    color: red;
+    margin-left: 50px;
+    width: max-content;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#myH1 {
+    color: coral;
+}
+
+.myH2 {
+    border-top: 2px dotted red;
+    border-bottom: 2px dashed red;
+    border-left: 2px solid red;
+    border-right: 2px inset red;
+    width: max-content;
+    padding: 20px;
+    
+}
+
+button {
+    padding: 20px;
+    width: 100px;
+    height: max-content;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}

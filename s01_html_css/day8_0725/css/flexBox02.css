@@ -1,0 +1,43 @@
+div {
+    border: 1px solid #000;
+    display: flex;
+}
+
+.box {
+    width: 800px;
+    height: 300px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.inBox {
+    width: 150px;
+
+    margin: 10px;
+}
+
+#opt1 {
+    align-items: flex-start;
+}
+
+#opt2 {
+    align-items: flex-end;
+}
+
+#opt3 {
+    align-items: center;
+}
+
+#opt4 {
+    align-items: baseline;
+}
+
+#opt5 {
+    align-items: stretch;
+}

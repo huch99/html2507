@@ -1,0 +1,29 @@
+.top {
+    max-width: 100%;
+    height: auto;
+}
+
+.container img {
+    width: 200px;
+    height: 400px;
+}
+
+.fill {
+    object-fit: fill;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.none {
+    object-fit: none;
+}
+
+.scale-down {
+    object-fit: scale-down;
+}

@@ -1,0 +1,9 @@
+div {
+  border: solid red;
+  max-width: 70ex;
+  float: right;
+}
+h4 {
+  float: left;
+  margin: 0;
+}

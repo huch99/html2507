@@ -1,0 +1,100 @@
+/* 방향을 사용해 선형 그라데이션 만들기 */
+#grad {
+    background-color: #00f;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: linear-gradient(to right bottom, #00f, #fff);
+}
+
+/* 각도를 사용해 선형 그라데이션 만들기 */
+#grad2 {
+    background-color: #f00;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: linear-gradient(45deg, #f00, #fff);
+}
+
+/* 선형 그라데이션의 색상 중지점 지정하기 */
+#grad3 {
+    background-color: #0f0;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: linear-gradient(240deg, #0f0, #fff 50%, #0f0);
+}
+
+/* 원형 그라데이션의 모양 지정하기 */
+#grad4 {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    background-color: #f00;
+    background: radial-gradient(#fff, #ff0, #f00);
+}
+
+#grad5 {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    background-color: #f00;
+    background: radial-gradient(circle, #fff, #ff0, #f00);
+}
+
+/* 위치 키워드를 사용해 원형 그라데이션 만들기 */
+#grad6 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: radial-gradient(circle at 20% 20%, #fff, #00f);
+    border-radius: 50%;
+}
+
+/* 원형 그라데이션의 색상 중지점 지정하기 */
+#grad7,
+#grad8 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background: orange;
+}
+
+#grad7 {
+    background: radial-gradient(yellow, white 70%, orange 60%);
+}
+
+#grad8 {
+    background: radial-gradient(yellow, white, orange);
+}
+
+/* 그라데이션 반복하기 */
+#grad9 ,#grad10 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+#grad9 {
+    background: repeating-linear-gradient(yellow, red 20px);
+}
+
+#grad10 {
+    background: repeating-radial-gradient(circle, white,#ccc 5%);
+}
+
+/* 그라데이션을 사용해 패턴 만들기 */
+
+#grad11, #grad12 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+#grad11 {
+    background: repeating-linear-gradient(yellow,yellow 20px,green, red 80px);
+}
+
+#grad12 {
+    background: repeating-radial-gradient(circle, white, white 10%, red, red 20%);
+}

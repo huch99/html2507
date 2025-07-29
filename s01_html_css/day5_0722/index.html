@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-align</title>
+
+    <style>
+        .start {
+            text-align: start;
+        }
+
+        .end {
+            text-align: end;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        .match-parent {
+            text-align: match-parent;
+        }
+
+        .line-height {
+            line-height: 50px;
+        }
+
+        .none {
+            text-decoration: none;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+
+        p {
+            width: 200px;
+            height: 50px;
+            border: outset blue;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        #container {
+        width: 800px;
+            height: 100px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .flexbox {
+            border: 1px solid green;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            float: left;
+        }
+
+        .flexbox:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="start line-height">start</p>
+    <p class="end line-height">end</p>
+    <p class="left line-height">left</p>
+    <p class="right line-height">right</p>
+    <p class="center line-height">center</p>
+    <p class="justify line-height">justifyjustify justify</p>
+
+    <p class="match-parent line-height">match-parent</p>
+
+
+
+    <p class="none line-height">없음</p>
+    <p class="underline line-height">밑줄</p>
+    <p class="overline line-height">윗줄</p>
+    <p class="line-through line-height">취소선</p>
+
+    <div id="container">
+        <div class="flexbox">1</div>
+        <div class="flexbox">2</div>
+        <div class="flexbox">3</div>
+    </div>
+</body>
+
+</html>

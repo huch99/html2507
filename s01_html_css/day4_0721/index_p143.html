@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소리 조절하기</title>
+</head>
+<body>
+    <h1>소리 조절하기</h1>
+
+    <form action="#">
+        <input type="range" min="0" max="100" step="1" value="20" 
+        oninput="document.getElementById('selected-value').innerText = this.value">
+        <span id="selected-value">20</span>
+    </form>
+</body>
+</html>
