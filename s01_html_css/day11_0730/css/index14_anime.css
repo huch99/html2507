@@ -1,0 +1,103 @@
+/* @keyframes : 애니메이션이 바뀌는 지점을 지정 */
+/* animation-delay : 애니메이션의 지연 시간을 지정 */
+/* animation-direction : 애니메이션을 종료한 뒤 처음부터 시작할 지, 역방향으로 진행할 지를 지정 */
+/* animation-duration : 애니메이션의 실행 시간을 지정 */
+/* animation-interation-count : 애니메이션의 반복 횟수 지정 */
+/* animation-name : @keyframes로 설정해 놓은 애니메이션을 지정 */
+/* animation-timing-function : 키프레임의 전환 형태를 지정 */
+/* animation : animation 속성을 한꺼번에 묶어서 지정 */
+
+/* @ketframes <이름> {
+    <키프레임 선택자> { <스타일> }
+}
+*/
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateX(0), translateY(500px);
+    }
+    to {
+        transform: translateX(500px) translateY(200px);
+    }
+}
+
+
+
+
+/* --------------------------------------------------- */
+.box {  
+    width: 100px;
+    height: 100px;
+    background-color: #fa0;
+    animation-name: slideRight; /* animation-name : <키프레임 이름> or none */
+    animation-duration: 2s;     /* animation-duration : <시간> */
+    animation-iteration-count: infinite;    /* animation-interaction-count : <숫자> or infinite */
+    animation-direction: alternate;
+    /* animation-direction : normal or reverse or alternate or alternate-reverse */
+    /* normal : from 에서 to로 */
+    /* reverse : to 에서 from으로 */
+    /* alternate : 홀수 번째는 normal로, 짝수 번째는 reverse로 */
+    /* alternate-reverse : 홀수 번째는 reverse로, 짝수 번째는 normal로 */
+    animation-timing-function: linear;
+    /* animation-timing-function : linear or ease or ease-in or ease-out or ease-in-out or cubic-bezier(n,n,n,n) */
+    
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #0af;
+    animation: bounce 3s infinite alternate ;
+}
+/* --------------------------------------------------- */
+
+body {
+    background: linear-gradient(to right,#ff5e62, #ff9966);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #fff;
+    outline: 2px solid #fff;
+    padding: 20px 60px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: -10;
+    transform: skewX(35deg);
+    transition: width 1s;
+}
+
+.button:hover::before {
+    width: 150%;
+}
+
+.button:hover {
+    color: #ff5e62;
+}
