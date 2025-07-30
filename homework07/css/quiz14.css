@@ -1,0 +1,39 @@
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+img {
+    animation: spin infinite 2s linear;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(400px);
+    }
+}
+
+@keyframes changeColor {
+    50% {
+        background-color: #ff5e62;
+    }
+
+    100% {
+        background-color: #17bdff;
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ffe867;
+    animation: slide 3s infinite alternate, changeColor 3s infinite alternate;
+}
